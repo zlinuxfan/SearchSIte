@@ -1,6 +1,5 @@
 package utilities;
 
-import org.apache.log4j.PropertyConfigurator;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -20,10 +19,6 @@ public class Utilities {
     private static final String authUser = "S4auACAuB";
     private static final String authPassword = "LxCJqdkmI";
 
-    static {
-        String log4jConfPath = "conf/log4j.properties";
-        PropertyConfigurator.configure(log4jConfPath);
-    }
 
     private static Logger log = LoggerFactory.getLogger(Utilities.class);
 
