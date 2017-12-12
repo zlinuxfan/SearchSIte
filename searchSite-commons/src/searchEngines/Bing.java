@@ -17,6 +17,7 @@ public class Bing implements Find {
         String url = "http://www.bing.com/search?q=" + requestName.replace(" ", "+");
 
         Document document = null;
+        ArrayList<UrlInfo> urlInfos = new ArrayList<>();
 
         try {
             document = Utilities.getDocument(url);
@@ -25,9 +26,14 @@ public class Bing implements Find {
         }
 
         Elements lineResponse = document.select("li.b_algo");
+        Elements h2 = lineResponse.select("h2");
+        Elements descriptions = lineResponse.select(".b_caption");
 
-        for (Element element : lineResponse) {
-            System.out.println(element.html());
+        int index = 0;
+        for (Element element : h2) {
+            System.out.println(descriptions.get(index++).select("p").text());
+            System.out.println(element.childNode(0).attributes().get("href"));
+            System.out.println(element.text());
         }
 
         return null;
