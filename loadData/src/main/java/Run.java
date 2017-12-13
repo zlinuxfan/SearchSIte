@@ -1,13 +1,20 @@
 
 
+
+import DAO.DaoImpl;
 import searchEngines.Bing;
 
+import java.util.List;
+
 public class Run {
+     private static DaoImpl dao = new DaoImpl();
+
     public static void main(String[] args) throws Exception {
-        String url = "как найти смысл жизни";
+        List<String> emptyRequestName = dao.readEmptyRequestName();
 
-        Bing bing = new Bing();
+        while (emptyRequestName != null) {
+            dao.writeUrlLink(emptyRequestName.get)
+        }
 
-        bing.find(url);
     }
 }
