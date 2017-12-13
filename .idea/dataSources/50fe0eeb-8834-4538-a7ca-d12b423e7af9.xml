@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="search_site@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.3">
+    <root id="1"/>
+    <database id="2" parent="1" name="search_site">
+      <ObjectId>49154</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12413</ObjectId>
+    </database>
+    <database id="4" parent="1" name="test_db">
+      <ObjectId>16385</ObjectId>
+    </database>
+    <database id="5" parent="1" name="test_rules">
+      <ObjectId>16386</ObjectId>
+    </database>
+    <schema id="6" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-12-13.17:01:33.635</IntrospectionTimestamp>
+      <IntrospectionStateNumber>753</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="information_schema">
+      <ObjectId>12121</ObjectId>
+    </schema>
+    <sequence id="12" parent="6" name="main_id_seq">
+      <ObjectId>49156</ObjectId>
+      <StateNumber>747</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="13" parent="6" name="similar_results_id_seq">
+      <ObjectId>49169</ObjectId>
+      <StateNumber>749</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="14" parent="6" name="urls_id_seq">
+      <ObjectId>49182</ObjectId>
+      <StateNumber>752</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="15" parent="6" name="main">
+      <ObjectId>49158</ObjectId>
+      <StateNumber>747</StateNumber>
+    </table>
+    <table id="16" parent="6" name="similar_results">
+      <ObjectId>49171</ObjectId>
+      <StateNumber>749</StateNumber>
+    </table>
+    <table id="17" parent="6" name="urls">
+      <ObjectId>49184</ObjectId>
+      <StateNumber>752</StateNumber>
+    </table>
+    <column id="18" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>747</StateNumber>
+      <SequenceName>main_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;main_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="19" parent="15" name="name">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>747</StateNumber>
+    </column>
+    <column id="20" parent="15" name="is_filled">
+      <Position>3</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>747</StateNumber>
+      <DefaultExpression>false</DefaultExpression>
+    </column>
+    <index id="21" parent="15" name="main_id_uindex">
+      <ObjectId>49168</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="22" parent="15" name="main_pkey">
+      <ObjectId>49166</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="23" parent="15" name="main_pkey">
+      <ObjectId>49167</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>main_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>749</StateNumber>
+      <SequenceName>similar_results_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;similar_results_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="25" parent="16" name="name">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>749</StateNumber>
+    </column>
+    <column id="26" parent="16" name="relation_request">
+      <Position>3</Position>
+      <DataType>bytea|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>749</StateNumber>
+    </column>
+    <index id="27" parent="16" name="similar_results_id_uindex">
+      <ObjectId>49180</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="28" parent="16" name="similar_results_pkey">
+      <ObjectId>49178</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="29" parent="16" name="similar_results_relation_request_uindex">
+      <ObjectId>49181</ObjectId>
+      <ColNames>relation_request</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="30" parent="16" name="similar_results_pkey">
+      <ObjectId>49179</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>similar_results_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>752</StateNumber>
+      <SequenceName>urls_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;urls_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="32" parent="17" name="name">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>752</StateNumber>
+    </column>
+    <column id="33" parent="17" name="link">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>752</StateNumber>
+    </column>
+    <column id="34" parent="17" name="url">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>752</StateNumber>
+    </column>
+    <column id="35" parent="17" name="description">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>752</StateNumber>
+    </column>
+    <index id="36" parent="17" name="urls_id_uindex">
+      <ObjectId>49193</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="37" parent="17" name="urls_pkey">
+      <ObjectId>49191</ObjectId>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="38" parent="17" name="urls_pkey">
+      <ObjectId>49192</ObjectId>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>urls_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
