@@ -3,7 +3,7 @@ package searchEngines;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import url.UrlInfo;
+import url.UrlLink;
 import utilities.Utilities;
 
 import java.io.IOException;
@@ -13,11 +13,11 @@ public class Bing implements Find {
     private static final String NAME = "Bing";
 
     @Override
-    public ArrayList<UrlInfo> find(String requestName) throws Exception {
+    public ArrayList<UrlLink> find(String requestName) throws Exception {
         String url = "http://www.bing.com/search?q=" + requestName.replace(" ", "+");
 
         Document document = null;
-        ArrayList<UrlInfo> urlInfos = new ArrayList<>();
+        ArrayList<UrlLink> urlInfos = new ArrayList<>();
 
         try {
             document = Utilities.getDocument(url);
@@ -25,6 +25,7 @@ public class Bing implements Find {
             e.printStackTrace();
         }
 
+        assert document != null;
         Elements lineResponse = document.select("li.b_algo");
         Elements h2 = lineResponse.select("h2");
         Elements descriptions = lineResponse.select(".b_caption");

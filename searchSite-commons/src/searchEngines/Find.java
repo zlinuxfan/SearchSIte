@@ -1,9 +1,9 @@
 package searchEngines;
 
 
-import url.UrlInfo;
+import url.UrlLink;
 import java.util.ArrayList;
 
 interface Find {
-    ArrayList<UrlInfo> find(String requestName) throws Exception;
+    ArrayList<UrlLink> find(String requestName) throws Exception;
 }
