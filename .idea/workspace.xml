@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2ce23c9-7f8d-4691-ab26-1a23d33c17a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/create_db.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loadData/src/test/java/DAO/DaoImpl_Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata_i.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/50fe0eeb-8834-4538-a7ca-d12b423e7af9/_metadata_/metadata.values.at" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/545669c1-b3f3-4ec3-a873-358bfa0f1007/_metadata_/metadata" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/545669c1-b3f3-4ec3-a873-358bfa0f1007/_metadata_/metadata.keystream" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/545669c1-b3f3-4ec3-a873-358bfa0f1007/_metadata_/metadata.keystream.len" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/545669c1-b3f3-4ec3-a873-358bfa0f1007/_metadata_/metadata.len" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/545669c1-b3f3-4ec3-a873-358bfa0f1007/_metadata_/metadata_i" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/545669c1-b3f3-4ec3-a873-358bfa0f1007/_metadata_/metadata_i.len" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/545669c1-b3f3-4ec3-a873-358bfa0f1007.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SearchSite.iml" afterPath="$PROJECT_DIR$/SearchSite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loadData/loadData.iml" afterPath="$PROJECT_DIR$/loadData/loadData.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loadData/pom.xml" afterPath="$PROJECT_DIR$/loadData/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loadData/src/main/java/Run.java" afterPath="$PROJECT_DIR$/loadData/src/main/java/Run.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchSite-commons/searchSite-commons.iml" afterPath="$PROJECT_DIR$/searchSite-commons/searchSite-commons.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchSite-commons/src/DAO/Dao.java" afterPath="$PROJECT_DIR$/searchSite-commons/src/DAO/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchSite-commons/src/DAO/DaoImpl.java" afterPath="$PROJECT_DIR$/searchSite-commons/src/DAO/DaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchSite-commons/src/searchEngines/Bing.java" afterPath="$PROJECT_DIR$/searchSite-commons/src/searchEngines/Bing.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/loadData/target/" />
@@ -911,7 +898,7 @@
       <workItem from="1513105624952" duration="2282000" />
       <workItem from="1513157032381" duration="8528000" />
       <workItem from="1513192024389" duration="2487000" />
-      <workItem from="1513246149828" duration="14702000" />
+      <workItem from="1513246149828" duration="14945000" />
     </task>
     <task id="LOCAL-00001" summary="Added libs">
       <created>1513022279267</created>
@@ -990,7 +977,21 @@
       <option name="project" value="LOCAL" />
       <updated>1513177813096</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added Dao and DB.">
+      <created>1513264333369</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1513264333369</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added libs.">
+      <created>1513264442294</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513264442294</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1026,11 +1027,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31630000" />
+    <option name="totallyTimeSpent" value="31873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1050,8 +1050,8 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3611691" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27258804" sideWeight="0.49786553" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3611691" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.348643" sideWeight="0.49786553" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13340448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1103,7 +1103,9 @@
     <MESSAGE value="search engines - start (bing)" />
     <MESSAGE value="added db." />
     <MESSAGE value="added ideas config." />
-    <option name="LAST_COMMIT_MESSAGE" value="added ideas config." />
+    <MESSAGE value="added Dao and DB." />
+    <MESSAGE value="added libs." />
+    <option name="LAST_COMMIT_MESSAGE" value="added libs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
