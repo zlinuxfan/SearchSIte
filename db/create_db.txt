@@ -1,0 +1,4 @@
+create user search_site_user with password '500';
+GRANT ALL on DATABASE search_site to search_site_user ;
+GRANT ALL ON TABLE main TO search_site_user;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO search_site_user;

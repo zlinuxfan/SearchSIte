@@ -2,12 +2,13 @@ package DAO;
 
 import url.UrlLink;
 
+import java.util.HashMap;
 import java.util.List;
 
 
 interface Dao {
 
-    public List<String> readEmptyRequestName();
+    public HashMap<String, Integer> readEmptyRequestName();
 
     public boolean writeUrlLink(String requestName, UrlLink urlLink);
 

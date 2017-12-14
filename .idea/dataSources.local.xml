@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="search_site@localhost" uuid="50fe0eeb-8834-4538-a7ca-d12b423e7af9">
-      <database-info product="PostgreSQL" version="9.5.10" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+    <data-source name="search_site@localhost" uuid="545669c1-b3f3-4ec3-a873-358bfa0f1007">
+      <database-info product="PostgreSQL" version="9.5.7" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
       <user-name>search_site_user</user-name>
+      <introspection-schemas>search_site:public</introspection-schemas>
     </data-source>
   </component>
 </project>

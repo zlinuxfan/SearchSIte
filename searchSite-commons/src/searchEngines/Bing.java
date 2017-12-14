@@ -17,16 +17,9 @@ public class Bing implements Find {
     public ArrayList<UrlLink> find(String requestName) throws Exception {
         String url = "http://www.bing.com/search?q=" + requestName.replace(" ", "+");
 
-        Document document = null;
         ArrayList<UrlLink> urlLinks = new ArrayList<>();
-
-        try {
-            document = Utilities.getDocument(url);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        assert document != null;
+        Document document = Utilities.getDocument(url);
+        
         Elements lineResponse = document.select("li.b_algo");
         Elements h2 = lineResponse.select("h2");
         Elements descriptions = lineResponse.select(".b_caption");
