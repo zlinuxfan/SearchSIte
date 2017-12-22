@@ -18,8 +18,8 @@
     </database>
     <schema id="6" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-12-14.15:14:22.508</IntrospectionTimestamp>
-      <IntrospectionStateNumber>784</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-12-21.13:31:47.026</IntrospectionTimestamp>
+      <IntrospectionStateNumber>804</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -40,23 +40,32 @@
     </schema>
     <sequence id="12" parent="6" name="main_id_seq">
       <ObjectId>49233</ObjectId>
-      <StateNumber>783</StateNumber>
+      <StateNumber>787</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <sequence id="13" parent="6" name="url_links_id_seq">
       <ObjectId>49221</ObjectId>
-      <StateNumber>779</StateNumber>
+      <StateNumber>787</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <table id="14" parent="6" name="main">
+    <sequence id="14" parent="6" name="what_often_searched_id_seq">
+      <ObjectId>57386</ObjectId>
+      <StateNumber>800</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="15" parent="6" name="main">
       <ObjectId>49235</ObjectId>
-      <StateNumber>783</StateNumber>
+      <StateNumber>786</StateNumber>
     </table>
-    <table id="15" parent="6" name="url_links">
+    <table id="16" parent="6" name="url_links">
       <ObjectId>49223</ObjectId>
-      <StateNumber>782</StateNumber>
+      <StateNumber>802</StateNumber>
     </table>
-    <column id="16" parent="14" name="id">
+    <table id="17" parent="6" name="what_often_searched">
+      <ObjectId>57388</ObjectId>
+      <StateNumber>804</StateNumber>
+    </table>
+    <column id="18" parent="15" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -64,36 +73,36 @@
       <SequenceName>main_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;main_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="17" parent="14" name="request_name">
+    <column id="19" parent="15" name="request_name">
       <Position>2</Position>
       <DataType>bytea|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>783</StateNumber>
     </column>
-    <column id="18" parent="14" name="is_filled">
+    <column id="20" parent="15" name="is_filled">
       <Position>3</Position>
       <DataType>boolean|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>783</StateNumber>
       <DefaultExpression>false</DefaultExpression>
     </column>
-    <index id="19" parent="14" name="main_id_uindex">
+    <index id="21" parent="15" name="main_id_uindex">
       <ObjectId>49245</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="20" parent="14" name="main_pkey">
+    <index id="22" parent="15" name="main_pkey">
       <ObjectId>49243</ObjectId>
       <ColNames>request_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="21" parent="14" name="main_pkey">
+    <key id="23" parent="15" name="main_pkey">
       <ObjectId>49244</ObjectId>
       <ColNames>request_name</ColNames>
       <UnderlyingIndexName>main_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="22" parent="15" name="id">
+    <column id="24" parent="16" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -101,50 +110,92 @@
       <SequenceName>url_links_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;url_links_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="23" parent="15" name="id_request_name">
+    <column id="25" parent="16" name="id_request_name">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>779</StateNumber>
     </column>
-    <column id="24" parent="15" name="link_name">
+    <column id="26" parent="16" name="link_name">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>779</StateNumber>
     </column>
-    <column id="25" parent="15" name="link">
+    <column id="27" parent="16" name="link">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>779</StateNumber>
     </column>
-    <column id="26" parent="15" name="link_description">
+    <column id="28" parent="16" name="link_description">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>781</StateNumber>
     </column>
-    <column id="27" parent="15" name="request_name">
+    <column id="29" parent="16" name="request_name">
       <Position>6</Position>
       <DataType>bytea|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>782</StateNumber>
     </column>
-    <index id="28" parent="15" name="url_links_id_uindex">
+    <index id="30" parent="16" name="url_links_id_uindex">
       <ObjectId>49232</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="29" parent="15" name="url_links_pkey">
+    <index id="31" parent="16" name="url_links_pkey">
       <ObjectId>49230</ObjectId>
       <ColNames>id_request_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="30" parent="15" name="url_links_pkey">
+    <key id="32" parent="16" name="url_links_pkey">
       <ObjectId>49231</ObjectId>
       <ColNames>id_request_name</ColNames>
       <UnderlyingIndexName>url_links_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>797</StateNumber>
+      <SequenceName>what_often_searched_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;what_often_searched_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="34" parent="17" name="main_id">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>797</StateNumber>
+    </column>
+    <column id="35" parent="17" name="pharse">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>797</StateNumber>
+    </column>
+    <column id="36" parent="17" name="own_id">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>797</StateNumber>
+    </column>
+    <index id="37" parent="17" name="what_often_searched_id_uindex">
+      <ObjectId>57394</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="38" parent="17" name="what_often_searched_pkey">
+      <ObjectId>57392</ObjectId>
+      <ColNames>main_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="17" name="what_often_searched_pkey">
+      <ObjectId>57393</ObjectId>
+      <ColNames>main_id</ColNames>
+      <UnderlyingIndexName>what_often_searched_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>

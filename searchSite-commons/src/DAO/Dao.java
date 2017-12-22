@@ -12,7 +12,7 @@ interface Dao {
 
     public boolean writeUrlLink(String requestName, UrlLink urlLink);
 
-    public boolean writeUrlLink(String requestName, List<UrlLink> urlLinks);
+    public boolean writeUrlLink(int main_id, List<UrlLink> urlLinks);
 
     public boolean writeYouTube(String requestName, List youTubes);
 }

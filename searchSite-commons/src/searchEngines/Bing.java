@@ -5,8 +5,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import url.UrlLink;
 import utilities.Utilities;
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
