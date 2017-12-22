@@ -1,32 +1,25 @@
 import DAO.DaoImpl;
 import page.Page;
-import searchEngines.Bing;
-import url.UrlLink;
+import searchEngines.Google;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UrlLinks {
+public class YouTubes {
     private static DaoImpl dao = new DaoImpl("jdbc:postgresql://194.87.219.8:5432/postgres", "search_site_user", "500");
     private static ArrayList<Page> emptyPages = new ArrayList<Page>();
 
-
     private static void init() {
-        HashMap<String, Integer> emptyRequestName = dao.readEmptyRequestName("is_url_links");
+        HashMap<String, Integer> emptyRequestName = dao.readEmptyRequestName("is_youtube");
         createEmptyPage(emptyRequestName);
     }
 
     public static void main(String[] args) throws Exception {
         init();
-        Bing bing = new Bing();
-        boolean status;
-        int counter = emptyPages.size() - 1;
 
-        for (Page page: emptyPages) {
-            status = dao.writeUrlLink(page.getId(), bing.find(page.getPageName()))  ;
-            System.out.println("(" + counter-- + ") " + page.getPageName() + ": " + status);
-        }
+        boolean status = false;
+        int counterPages = emptyPages.size();
     }
 
     private static void createEmptyPage(HashMap<String, Integer> emptyRequestName) {

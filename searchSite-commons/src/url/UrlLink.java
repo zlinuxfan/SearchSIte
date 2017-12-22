@@ -10,7 +10,7 @@ public class UrlLink {
 
     public UrlLink(URL url, String urlName, String description) {
         this.url = url;
-        this.description = description;
+        this.description = description.replace("\'", " ").replace("\\", " ");
         this.urlName = urlName;
     }
 

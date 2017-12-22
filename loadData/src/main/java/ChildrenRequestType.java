@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ChildrenRequestType {
-    private static DaoImpl dao = new DaoImpl("jdbc:postgresql://localhost:5432/search_site", "search_site_user", "500");
+    private static DaoImpl dao = new DaoImpl("jdbc:postgresql://194.87.219.8:5432/postgres", "search_site_user", "500");
     private static ArrayList<Page> emptyPages = new ArrayList<Page>();
 
     private static void init() {
