@@ -28,6 +28,8 @@ public class DaoImpl implements Dao {
     private static final String TABLE_FIELD_LINK = "link";
     private static final String TABLE_FIELD_LINK_DESCRIPTION = "link_description";
 
+    private static final String TABLE_YOUTUBE = "youtube";
+    private static final String TABLE_FIELD_KEY = "key";
 
     public DaoImpl(String host, String user, String password) {
         this.host = host;
@@ -245,9 +247,9 @@ public class DaoImpl implements Dao {
     }
 
     @Override
-    public boolean writeUrlLink(int main_id, List<UrlLink> urlLinks) {
+    public boolean writeUrlLink(int requestNameId, List<UrlLink> urlLinks) {
         if (urlLinks.size() == 0) {
-            return true;
+            return false;
         }
 
         String request = String.format("INSERT INTO %s (%s, %s, %s, %s) VALUES ",
@@ -264,7 +266,7 @@ public class DaoImpl implements Dao {
         for (UrlLink urlLink : urlLinks) {
             builder
                     .append("(\'")
-                    .append(main_id)
+                    .append(requestNameId)
                     .append("\', \'")
                     .append(urlLink.getUrlName())
                     .append("\', \'")
@@ -282,13 +284,44 @@ public class DaoImpl implements Dao {
         return insertInto(builder.toString()) && update(
                 String.format("UPDATE %s SET is_url_links=true WHERE id=%s;",
                         TABLE_MAIN,
-                        main_id)
+                        requestNameId)
         );
     }
 
     @Override
-    public boolean writeYouTube(String requestName, List youTubes) {
-        return false;
+    public boolean writeYouTube(int requestNameId, List<String> youTubes) {
+        if (youTubes.size() == 0) {
+            return false;
+        }
+
+        String request = String.format("INSERT INTO %s (%s, %s) VALUES ",
+                TABLE_YOUTUBE,
+                TABLE_FIELD_MAIN_ID,
+                TABLE_FIELD_KEY
+        );
+
+        StringBuilder builder = new StringBuilder();
+        builder.append(request);
+
+        for (String youtube : youTubes) {
+            builder
+                    .append("(")
+                    .append(requestNameId)
+                    .append(", \'")
+                    .append(youtube)
+                    .append("\'), ");
+        }
+
+        // delete delete an redundant comma
+        builder
+                .delete(builder.length()-2, builder.length()-1)
+                .append(";");
+
+        return insertInto(builder.toString()) && update(
+                String.format("UPDATE %s SET is_youtube=true WHERE id=%s;",
+                        TABLE_MAIN,
+                        requestNameId)
+        );
     }
 
     private static String hexToString(String hex) {

@@ -2,6 +2,7 @@ package DAO;
 
 import url.UrlLink;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -12,7 +13,7 @@ interface Dao {
 
     public boolean writeUrlLink(String requestName, UrlLink urlLink);
 
-    public boolean writeUrlLink(int main_id, List<UrlLink> urlLinks);
+    public boolean writeUrlLink(int requestNameId, List<UrlLink> urlLinks);
 
-    public boolean writeYouTube(String requestName, List youTubes);
+    public boolean writeYouTube(int requestNameId, List<String> youTubes);
 }
