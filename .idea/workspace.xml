@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2ce23c9-7f8d-4691-ab26-1a23d33c17a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0b676499-6704-4c86-83da-fac3c9fd662e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/0b676499-6704-4c86-83da-fac3c9fd662e.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loadData/src/main/java/ChildrenRequestType.java" afterPath="$PROJECT_DIR$/loadData/src/main/java/ChildrenRequestType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchSite-commons/src/DAO/DaoImpl.java" afterPath="$PROJECT_DIR$/searchSite-commons/src/DAO/DaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchSite-commons/src/url/UrlLink.java" afterPath="$PROJECT_DIR$/searchSite-commons/src/url/UrlLink.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/loadData/target/" />
@@ -1133,7 +1129,7 @@
       <workItem from="1513192024389" duration="2487000" />
       <workItem from="1513246149828" duration="14979000" />
       <workItem from="1513762692360" duration="43977000" />
-      <workItem from="1513970994000" duration="29922000" />
+      <workItem from="1513970994000" duration="29940000" />
     </task>
     <task id="LOCAL-00001" summary="Added libs">
       <created>1513022279267</created>
@@ -1247,7 +1243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514064436425</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="bag fix.">
+      <created>1514146052764</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1514146052764</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1283,7 +1286,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105806000" />
+    <option name="totallyTimeSpent" value="105824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="21" width="1323" height="747" extended-state="6" />
@@ -1401,7 +1404,8 @@
     <MESSAGE value="idea config." />
     <MESSAGE value="added youtube and more." />
     <MESSAGE value="added greater youtube." />
-    <option name="LAST_COMMIT_MESSAGE" value="added greater youtube." />
+    <MESSAGE value="bag fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="bag fix." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
