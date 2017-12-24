@@ -29,7 +29,8 @@ public class ChildrenRequestType {
                 continue;
             }
 
-            for (String requestName : oftenSearched) {
+            for (String rawRequestName : oftenSearched) {
+                String requestName = rawRequestName.replace("\'", "");
                 int requestNameId = dao.isThere(requestName);
                 if (requestNameId != 0) {
                     status = dao.writeWhatOftenSearched(page.getId(), requestNameId);

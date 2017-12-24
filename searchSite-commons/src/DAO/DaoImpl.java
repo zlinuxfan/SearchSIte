@@ -77,7 +77,6 @@ public class DaoImpl implements Dao {
 
     private HashMap<String, Integer> selectIn(String query) {
         HashMap<String, Integer> emptyRequestName = new HashMap<>();
-
         Connection connection = null;
         Statement statement = null;
         ResultSet result;
@@ -221,6 +220,7 @@ public class DaoImpl implements Dao {
             numberOfInsert = statement.executeUpdate();
 
         } catch (SQLException | ClassNotFoundException e) {
+            System.out.println("-> " + query);
             e.printStackTrace();
         } finally {
             if (statement != null) {

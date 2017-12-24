@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-12-23.22:49:55.207</IntrospectionTimestamp>
-      <IntrospectionStateNumber>5860</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-12-24.22:05:23.528</IntrospectionTimestamp>
+      <IntrospectionStateNumber>5861</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -46,7 +46,7 @@
     </sequence>
     <sequence id="13" parent="3" name="youtube_id_seq">
       <ObjectId>16436</ObjectId>
-      <StateNumber>3775</StateNumber>
+      <StateNumber>5861</StateNumber>
     </sequence>
     <table id="14" parent="3" name="main">
       <ObjectId>16386</ObjectId>
