@@ -9,6 +9,7 @@ import utilities.Utilities;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 
 public class Bing implements Find {
@@ -29,13 +30,16 @@ public class Bing implements Find {
         for (Element element : h2) {
             URL href;
             try {
-                href = new URL(element.childNode(0).attributes().get("href"));
+                href = new URL(
+                        URLDecoder.decode(
+                                element.childNode(0).attributes().get("href"), "UTF-8").replace("'", "")
+                );
 
                 urlLinks.add(
                         new UrlLink(
                                 href,
-                                element.text(),
-                                descriptions.get(index++).select("p").text()
+                                element.text().replace("\'", "").replace("'", ""),
+                                descriptions.get(index++).select("p").text().replace("\'", "").replace("'", "")
                         )
                 );
             } catch (MalformedURLException e) {

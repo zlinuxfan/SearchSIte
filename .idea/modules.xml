@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SearchSite.iml" filepath="$PROJECT_DIR$/SearchSite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SearchSite-web/SearchSite-web.iml" filepath="$PROJECT_DIR$/SearchSite-web/SearchSite-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/loadData/loadData.iml" filepath="$PROJECT_DIR$/loadData/loadData.iml" />
       <module fileurl="file://$PROJECT_DIR$/searchSite-commons/searchSite-commons.iml" filepath="$PROJECT_DIR$/searchSite-commons/searchSite-commons.iml" />
     </modules>

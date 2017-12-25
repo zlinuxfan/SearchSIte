@@ -52,7 +52,7 @@ public class Utilities {
                     .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 " +
                             "(KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 OPR/42.0.2393.94")
                     .followRedirects(true)
-                    .timeout(5000)
+                    .timeout(13000)
                     .get();
         return document;
     }

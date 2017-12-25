@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="loadData" />
+        <module name="SearchSite-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="loadData" target="1.6" />
+      <module name="SearchSite-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

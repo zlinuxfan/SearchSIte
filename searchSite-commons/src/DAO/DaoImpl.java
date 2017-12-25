@@ -216,6 +216,7 @@ public class DaoImpl implements Dao {
         try {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(host, user, password);
+            System.out.println(query);
             statement = connection.prepareStatement(query);
             numberOfInsert = statement.executeUpdate();
 
@@ -227,6 +228,7 @@ public class DaoImpl implements Dao {
                 try {
                     statement.close();
                 } catch (SQLException e) {
+                    System.out.println("error: statement close.");
                     e.printStackTrace();
                 }
             }
@@ -234,6 +236,7 @@ public class DaoImpl implements Dao {
                 try {
                     connection.close();
                 } catch (SQLException e) {
+                    System.out.println("error: connection close.");
                     e.printStackTrace();
                 }
             }
